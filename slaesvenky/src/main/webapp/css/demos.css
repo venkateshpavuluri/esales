@@ -1,0 +1,245 @@
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+	background-color:#f4f2ed;
+}
+
+table {
+	font-size: 1em;
+}
+.form {
+	padding: 15px 10px 5px 10px;
+}
+
+.form label {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;
+	padding-bottom: 4px;
+}
+
+.form label span {
+	color: #999;
+	font-weight: normal;
+}
+
+.form .field {
+	display: block;
+}
+
+.form .inline-field .field {
+	display: inline;
+}
+
+.form .req {
+	font-size: 13px;
+	float: right;
+	white-space: nowrap;
+	color: #999;
+}
+
+.form p {
+	padding-bottom: 15px;
+}
+
+.size1 {
+	width: 716px;
+}
+
+.size2 {
+	width: 80px;
+}
+
+.size3 {
+	width: 120px;
+}
+
+.size4 {
+	width: 200px;
+}
+
+.demo-description {
+	clear: both;
+	padding: 12px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+.header { height:89px; background:url(.././css/images/14563.png) no-repeat; }
+.content{
+width:100%;
+}
+.contentdata{
+color:skyblue;
+font-size:25px;
+}
+.contentdata1{
+color:orange;
+font-size:20px;
+padding-top: 20px;
+font-style:italic;
+}
+.forgot{
+font-size:12px;
+padding-top: 12px;
+padding-left: 10px;
+cursor:pointer;
+color:skyblue;
+
+}
+.data{
+padding-left: 1124px;
+color: #999;
+ margin-top: 4px; 
+margin-bottom: 0;
+margin-left: 45px;
+}
+
+.leftpanel {
+width:664px;
+background-color: #fff;
+min-height: 320px;
+padding-top: 31px;
+padding-bottom: 30px;
+padding-right: 52px;
+padding-left: 22px;
+float: left;
+font-size:22px;
+-webkit-box-shadow: #666 0 0 10px;
+-moz-box-shadow: #666 0 0 10px;
+box-shadow: #666 0 0 10px;
+border: 1px;
+border-color: #666;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+margin-left: 1px;
+}
+
+.rightpanel{
+margin-left: 5px;
+width:524px;
+float: left;
+background-color: #fff;
+min-height: auto;
+padding-top: 31px;
+padding-bottom: 30px;
+padding-right: 52px;
+padding-left: 25px;
+font-size:22px;
+-webkit-box-shadow: #666 0 0 10px;
+-moz-box-shadow: #666 0 0 10px;
+box-shadow: #666 0 0 10px;
+border: 1px;
+border-color: #666;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+text-align: right;
+}
+.table {   width: 100%; }
+.table tr th { text-align:left; padding:2px; color:#333; font-size:18px;}
+.table tr td{   padding:2px; font-size:18px;}
+
+.imagealign{
+margin-top: -90px;
+}
+.button { background:F55A00 repeat-x 0 0; border:solid 1px #F55A00; color:black; font-size:14px; cursor:pointer; line-width:80px !important; }
+.button:hover { color:#333; border-color:#857b42; }
+
+ .vbox {
+-ms-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-ms-transform-origin: left top 0;
+-moz-transform-origin: left top 0;
+-webkit-transform-origin: left top 0;
+transform-origin: left top 0;
+background: #222764;
+color: #fff;
+margin-top: 250px;
+padding: 10px;
+border: 1px solid #ccc;
+text-transform: uppercase;
+border: 1px solid #B52C2C;
+text-transform: 1px 1px 0px rgba(0, 0, 0, 0.5);
+box-shadow: 2px -2px 0px rgba(0, 0, 0, 0.1);
+float: left;
+}
+.flip-container {
+	perspective: 1000;
+	transform-style: preserve-3d;
+}
+	/*  UPDATED! flip the pane when hovered */
+	.flip-container:hover .back {
+		transform: rotateY(0deg);
+	}
+	.flip-container:hover .front {
+	    transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 624px;
+	height: 20px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(-180deg);
+}
+
+/* 
+	Some vertical flip updates 
+*/
+.vertical.flip-container {
+	position: relative;
+}
+
+	.vertical .back {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.flip-container:hover .back {
+	    transform: rotateX(0deg);
+	}
+
+	.vertical.flip-container:hover .front {
+	    transform: rotateX(180deg);
+	}
+.tableGeneral {
+-moz-border-radius: 9px;
+-webkit-border-radius: 9px;
+border-radius: 9px;
+margin: 5px auto 5px;
+/* background: url(../images/form-bg.png) top left; */
+
+}

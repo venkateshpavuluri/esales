@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/Home/home.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/Home/header.jsp" />
+		<!-- <put-attribute name="menu" value="/WEB-INF/Home/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/Home/footer.jsp" />
+	</definition>
+
+	<!-- Login -->
+	<definition name="loginHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+	</definition>
+	<!-- Exception page -->
+	<definition name="ExceptionsHome" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/ErrorPages/genericError.jsp" />
+	</definition>
+
+	<!-- Department -->
+	<definition name="deptHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/department.jsp" />
+	</definition>
+
+	<!-- Billing -->
+	<definition name="billHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/billing.jsp" />
+	</definition>
+	
+	<!-- Billing Search -->
+	<definition name="billSearchHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/billingSearch.jsp" />
+	</definition>
+
+	<!-- Client -->
+	<definition name="clientHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/clientInfo.jsp" />
+	</definition>
+
+
+	<!-- Branch -->
+	<definition name="branchHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/branch.jsp" />
+	</definition>
+
+	<!-- Category -->
+	<definition name="catHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/category.jsp" />
+	</definition>
+	<!-- Stock Return -->
+	<definition name="stockReturnHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/stockReturn.jsp" />
+	</definition>
+
+	<!-- Stock Transfer -->
+
+	<definition name="stockEntry" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/stockEntry.jsp" />
+	</definition>
+
+	<definition name="productView" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/product.jsp" />
+	</definition>
+
+	<definition name="stockAllocView" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/stockAllocation.jsp" />
+	</definition>
+		
+	<definition name="expenseReportHome" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/expenseReportLocWise.jsp" />
+	</definition>
+	<definition name="stockReportHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/stockReportLocWise.jsp" />
+	</definition>
+	<definition name="saleReportHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/saleReportLocWise.jsp" />
+	</definition>
+	<definition name="todayReportHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/todayReportLocWise.jsp" />
+	</definition>
+	
+	
+	<!-- Sub Category -->
+	<definition name="subCatHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/subCategory.jsp" />
+	</definition>
+
+	<!-- Expenses Home -->
+	<definition name="expensesHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/expenses.jsp" />
+	</definition>
+	<!-- DBBackup FileUpload -->
+	<definition name="dbBackUpView" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/DataBackfileUpload.jsp" />
+	</definition>
+
+	<!-- Permissions -->
+
+	<definition name="permissionsView" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/permissions.jsp" />
+	</definition>
+
+
+	<definition name="dbBackUpView" extends="base.definition">
+		<put-attribute name="body"
+			value="/WEB-INF/pages/DataBackfileUpload.jsp" />
+	</definition>
+
+	<!-- Users -->
+	<definition name="userHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/user.jsp" />
+	</definition>
+	<!-- Home -->
+	<definition name="home" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+	<!-- Category -->
+	<definition name="roleHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/role.jsp" />
+	</definition>
+</tiles-definitions>
+
+
+

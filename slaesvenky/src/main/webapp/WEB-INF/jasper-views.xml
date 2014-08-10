@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!--  Report Work -->
+		<bean id="multiView" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:DailySalesReportLocWise.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		<bean id="stockLocWise" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:DailyStockReportLocWise.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		<bean id="expensesLocWise" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:salesExpensesReport.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		<bean id="dailystock" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:DailyStockReport.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		<bean id="dailysales" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:DailySalesReport.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		<bean id="dailyexpenses" class="org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView">
+	   		<property name="url" value="classpath:DailyExpensesReport.jrxml"/>
+	 		   <!-- <property name="reportDataKey" value="dataSource"/> -->
+		</bean>
+		
+		
+</beans>

@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Free CSS template by ChocoTemplates.com</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="js/jqueryui.css" />
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$("#sdate,#edate").datepicker({
+			changeDate : true,
+			changeMonth : true,
+			changeYear : true,
+			showButtonPanel : false,
+			dateFormat : 'dd-mm-yy'
+		});
+
+	});
+</script>
+
+</head>
+<body>
+<!-- Header -->
+	<div id="header">
+		<div class="shell">
+			<!-- Logo + Top Nav -->
+			<div id="top">
+				<h1>
+					<a href="#">mySalesInfo</a>
+				</h1>
+				<div id="top-navigation">
+					Welcome <a href="#"><strong>Administrator</strong></a> <span>|</span>
+					<a href="#">Help</a> <span>|</span> <a href="#">Profile
+						Settings</a> <span>|</span> <a href="#">Log out</a>
+				</div>
+			</div>
+			<!-- End Logo + Top Nav -->
+
+			<!-- Main Nav -->
+			<div id="navigation">
+				<ul>
+					<li><a href="department.html" ><span>Department</span></a></li>
+					<li><a href="category.html" ><span>Category</span></a></li>
+					<li><a href="Subcategory.html" ><span>Sub Category</span></a></li>
+					<li><a href="product.html"><span>Products</span></a></li>
+					<li><a href="branch.html" ><span>Branch</span></a></li>
+					<li><a href="stockEntry.html"><span>Stock Entry</span></a></li>
+					<li><a href="stockAllocation.html"><span>Stock
+								Allocation</span></a></li>
+					<li><a href="branchPrivilege.html"><span>Branch
+								Privilege</span></a></li>
+					<li><a href="billing.html" ><span>Billing</span></a></li>
+					<li><a href="expenses.html" class="active"><span>Expenses</span></a></li>
+					 <li><a href="#"><span>Reports</span></a></li>
+					
+				</ul>
+			</div>
+			<!-- End Main Nav -->
+		</div>
+	</div>
+	<!-- End Header -->
+	
+	<!-- Container -->
+	<div id="container">
+		<div class="shell">
+			<!-- Main -->
+			<div id="main">
+				<div class="cl">&nbsp;</div>
+
+				<!-- Content -->
+				<div id="content">
+
+					<!-- Box -->
+					<div class="box">
+						<!-- Box Head -->
+						<div class="box-head">
+							<h2>Add New Expenses</h2>
+						</div>
+						<!-- End Box Head -->
+
+						<form action="" method="post">
+							<div class="form">
+								<table>
+									<tr>
+										<td><label>Description</label></td>
+										<td><label>Amount</label></td>
+										<td><label>Bill No</label></td>
+									</tr>
+									<tr>
+										<td><input type="text" class="field size4" /></td>
+										<td><input type="text" class="field size4" /></td>
+										<td><input type="text" class="field size4" /></td>
+									</tr>
+									<tr>
+										<td><label>Bill Date</label></td>
+										<td><label>Total</label></td>
+										
+									</tr>
+									<tr>
+										
+										<td><input type="text" class="field size4" id="sdate"/></td>
+										<td><input type="text" class="field size4" placeHolder="Auto" readOnly/></td>
+									</tr>
+									
+									
+								</table>
+
+							</div>
+							<!-- Form Buttons -->
+							<div class="buttons">
+								<input type="reset" class="button" value="Clear" /> <input
+									type="submit" class="button" value="Submit" />
+							</div>
+							<!-- End Form Buttons -->
+
+						</form>
+					</div>
+					<!-- End Box -->
+
+
+					<!-- Box -->
+					<div class="box">
+						<!-- Box Head -->
+						<div class="box-head">
+							<h2 class="left">Current Expenses</h2>
+							<div class="right">
+								<label>Search Expenses</label> <input type="text"
+									class="field small-field" /> <input type="submit"
+									class="button" value="search" />
+							</div>
+						</div>
+						<!-- End Box Head -->
+
+						<!-- Table -->
+						<div class="table">
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<th width="13"><input type="checkbox" class="checkbox" /></th>
+									<th>Expenses</th>
+									<th width="110" class="ac">Content Control</th>
+								</tr>
+								<!--<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">S R Nagar</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">Ameerpet</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">KPHB</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+								<tr class="odd">
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">Madhapur</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">Hitech City</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">Begumpet</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox" class="checkbox" /></td>
+									<td><h3>
+											<a href="#">Pragathi Nagar</a>
+										</h3></td>
+									<td><a href="#" class="ico del">Delete</a><a href="#"
+										class="ico edit">Edit</a></td>
+								</tr>-->
+								
+								
+							</table>
+
+
+							<!-- Pagging -->
+							<div class="pagging">
+								<div class="left">Showing 1-12 of 44</div>
+								<div class="right">
+									<a href="#">Previous</a> <a href="#">1</a> <a href="#">2</a> <a
+										href="#">3</a> <a href="#">4</a> <a href="#">245</a> <span>...</span>
+									<a href="#">Next</a> <a href="#">View all</a>
+								</div>
+							</div>
+							<!-- End Pagging -->
+
+						</div>
+						<!-- Table -->
+
+					</div>
+					<!-- End Box -->
+
+				</div>
+				<!-- End Content -->
+
+				<div class="cl">&nbsp;</div>
+			</div>
+			<!-- Main -->
+		</div>
+	</div>
+	<!-- End Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="shell">
+			<span class="left">&copy; 2010 - MNT Soft</span> <span class="right">
+				Design by <a href="http://mntsoft.co.in" target="_blank"
+				title="The Sweetest CSS Templates WorldWide">www.mysalesinfo.org</a>
+			</span>
+		</div>
+	</div>
+	<!-- End Footer -->
+
+</body>
+</html>
